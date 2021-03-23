@@ -24,6 +24,8 @@ namespace razor_pg_ef.Pages
             _logger = logger;
         }
 
+        public int g;
+
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
